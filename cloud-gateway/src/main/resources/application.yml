@@ -1,0 +1,39 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    # 服务名称
+    name: cloud-gateway
+  cloud:
+    nacos:
+      # nacos注册中心
+      discovery:
+        # 服务ip:port
+        server-addr: 119.45.5.204:8848
+    # 路由网关配置
+    gateway:
+      # 设置与服务注册发现组件结合，这样可以采用服务名的路由策略
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        # 服务提供者
+        - id: id-cloud-provider # 路由id，唯一
+          # 采用 LoadBalanceClient 方式请求，以 lb:// 开头，后面的是注册在 Nacos 上的服务名
+          uri: lb://cloud-provider
+          predicates: # 路由断言
+            # - Path=/provider/** # 路由匹配规则
+            - Method=GET,POST,PUT,DELETE
+        # 服务消费者
+        - id: id-cloud-consumer-feign
+          uri: lb://cloud-consumer-feign
+          predicates:
+            # - Path=/consumer-feign/**
+            - Method=GET,POST,PUT,DELETE
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
