@@ -16,6 +16,7 @@
         <module>cloud-consumer</module>
         <module>cloud-consumer-feign</module>
         <module>cloud-gateway</module>
+        <module>auth</module>
     </modules>
 
     <properties>
