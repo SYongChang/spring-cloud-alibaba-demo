@@ -15,6 +15,7 @@
         <module>cloud-provider</module>
         <module>cloud-consumer</module>
         <module>cloud-consumer-feign</module>
+        <module>cloud-gateway</module>
     </modules>
 
     <properties>
@@ -80,6 +81,7 @@
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>3.1.2</version>
                 </plugin>
             </plugins>
         </pluginManagement>
