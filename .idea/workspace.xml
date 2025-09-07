@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6f58eb39-b297-4397-972b-fda745dd0216" name="Changes" comment="feat(feign、gateway):添加feign和gateway模块">
+      <change afterPath="$PROJECT_DIR$/cloud-auth/src/main/java/org/scf/config/JwtConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-auth/src/main/java/org/scf/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-auth/src/main/java/org/scf/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-auth/src/main/java/org/scf/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-auth/src/main/java/org/scf/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-auth/src/main/java/org/scf/feign/UserFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-auth/src/main/java/org/scf/interceptor/JwtInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-auth/src/main/java/org/scf/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-auth/src/main/java/org/scf/service/WechatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-auth/src/main/java/org/scf/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-auth/src/main/java/org/scf/service/impl/WechatServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-auth/src/main/java/org/scf/util/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-auth/src/main/java/org/scf/util/TokenValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-auth/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-auth/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-model/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-model/src/main/java/org/scf/config/SystemConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-model/src/main/java/org/scf/dto/auth/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-model/src/main/java/org/scf/dto/auth/LoginResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-model/src/main/java/org/scf/dto/auth/TokenInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-model/src/main/java/org/scf/dto/common/ApiResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-model/src/main/java/org/scf/dto/user/UserUpdateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-model/src/main/java/org/scf/dto/wechat/WechatLoginResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-model/src/main/java/org/scf/entity/auth/JwtBlacklist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-model/src/main/java/org/scf/entity/user/MiniprogramUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-model/src/main/java/org/scf/entity/user/UserLoginLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-model/src/main/java/org/scf/enums/ErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-model/src/main/java/org/scf/exception/BusinessException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-user/src/main/java/org/scf/config/DatabaseConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-user/src/main/java/org/scf/config/DruidConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-user/src/main/java/org/scf/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-user/src/main/java/org/scf/mapper/MiniprogramUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-user/src/main/java/org/scf/mapper/UserLoginLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-user/src/main/java/org/scf/service/MiniprogramUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-user/src/main/java/org/scf/service/UserLoginLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-user/src/main/java/org/scf/service/impl/MiniprogramUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-user/src/main/java/org/scf/service/impl/UserLoginLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-user/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-user/src/main/resources/mapper/MiniprogramUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/circular_dependency_fix.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/database_design.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/miniprogram_user_simple.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/miniprogram_user_tables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/java/org/scf/AuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-auth/src/main/java/org/scf/AuthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign/src/main/java/org/scf/ConsumerFeignApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-user/src/main/java/org/scf/UserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign/src/main/java/org/scf/config/FeignConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign/src/main/java/org/scf/controller/ConsumerFeignController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign/src/main/java/org/scf/service/FeignService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer/src/main/java/org/scf/ConsumerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer/src/main/java/org/scf/config/RestTemplateConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer/src/main/java/org/scf/controller/ConsumerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/org/scf/CloudProviderMainApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/org/scf/controller/ConfigController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/java/org/scf/controller/ProviderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider/src/main/resources/bootstrap.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="E:\softWare\apache-maven-3.9.9" />
+        <option name="localRepository" value="E:\softWare\apache-maven-3.9.9\repository" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="E:\softWare\apache-maven-3.9.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="32EavyAqfjpYmFQr8zSfJ6RJvDO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "HTTP Request.ConsumerFeignApplication | #1.executor": "Run",
+    "Maven.cloud-model [clean].executor": "Run",
+    "Maven.cloud-model [package].executor": "Run",
+    "Maven.spring-cloud-alibaba-demo [clean].executor": "Run",
+    "Maven.spring-cloud-alibaba-demo [package].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.AuthApplication.executor": "Run",
+    "Spring Boot.CloudProviderMainApplication.executor": "Run",
+    "Spring Boot.ConsumerApplication.executor": "Run",
+    "Spring Boot.ConsumerFeignApplication.executor": "Run",
+    "Spring Boot.GatewayApplication.executor": "Run",
+    "Spring Boot.UserApplication.executor": "Run",
+    "git-widget-placeholder": "dev",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/workSpace/git/spring-cloud-alibaba-demo/model",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workSpace\git\spring-cloud-alibaba-demo\model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\workSpace\git\spring-cloud-alibaba-demo\user\src\main\resources" />
+      <recent name="E:\workSpace\git\spring-cloud-alibaba-demo\auth\src\main" />
+      <recent name="E:\workSpace\git\spring-cloud-alibaba-demo\model\src\main\java\org\scf\entity\user" />
+      <recent name="E:\workSpace\git\spring-cloud-alibaba-demo\model\src\main\java\org\scf\config" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.UserApplication">
+    <configuration name="ConsumerFeignApplication | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/ConsumerFeignApplication.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="spring-cloud-alibaba-demo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="spring-cloud-alibaba-demo" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.scf.AuthApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.scf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.scf.GatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.scf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="cloud-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.scf.UserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.ConsumerFeignApplication | #1" />
+      <item itemvalue="Spring Boot.UserApplication" />
+      <item itemvalue="Spring Boot.AuthApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.AuthApplication" />
+        <item itemvalue="Spring Boot.GatewayApplication" />
+        <item itemvalue="HTTP Request.ConsumerFeignApplication | #1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f58eb39-b297-4397-972b-fda745dd0216" name="Changes" comment="" />
+      <created>1756988421395</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1756988421395</updated>
+      <workItem from="1756988422465" duration="3933000" />
+      <workItem from="1757157003056" duration="629000" />
+      <workItem from="1757158621328" duration="2169000" />
+      <workItem from="1757160812775" duration="13771000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat(feign、gateway):添加feign和gateway模块">
+      <option name="closed" value="true" />
+      <created>1756992763647</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756992763647</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="feat(feign、gateway):添加feign和gateway模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(feign、gateway):添加feign和gateway模块" />
+  </component>
+</project>

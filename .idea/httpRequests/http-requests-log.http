@@ -1,0 +1,7 @@
+GET http://localhost:9003/consumer/feign/test/open-feign
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.12)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+###
+

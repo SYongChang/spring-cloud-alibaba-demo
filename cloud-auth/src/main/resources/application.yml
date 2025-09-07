@@ -1,0 +1,44 @@
+spring:
+  cloud:
+    openfeign:
+      httpclient:
+        hc5:
+          enabled: false
+      client:
+        config:
+          default:
+            connect-timeout: 5000
+            read-timeout: 5000
+  # Redis配置
+  data:
+    redis:
+      host: 119.45.5.204
+      port: 26739
+      password: 7TyjwL2nRG468bM7
+      database: 0
+      timeout: 10000ms
+      connect-timeout: 10000ms
+      lettuce:
+        pool:
+          max-active: 8
+          max-wait: -1ms
+          max-idle: 8
+          min-idle: 0
+        shutdown-timeout: 100ms
+
+# JWT配置
+jwt:
+  secret: MySecretKeyForJWTTokenGenerationThatIsLongEnoughForHS512AlgorithmAndSecureEnoughForProductionUseWithAtLeast64Characters
+  access-token-expire: 7200  # 2小时
+  refresh-token-expire: 604800  # 7天
+
+# 微信小程序配置
+miniprogram:
+  appid: wxd295e12aa2287085
+  secret: e5a0fa7316e1b9390af3fcb55ed139da
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

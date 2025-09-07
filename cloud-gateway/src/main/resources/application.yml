@@ -18,18 +18,17 @@ spring:
         locator:
           enabled: true
       routes:
-        # 服务提供者
-        - id: id-cloud-provider # 路由id，唯一
-          # 采用 LoadBalanceClient 方式请求，以 lb:// 开头，后面的是注册在 Nacos 上的服务名
-          uri: lb://cloud-provider
-          predicates: # 路由断言
-            # - Path=/provider/** # 路由匹配规则
-            - Method=GET,POST,PUT,DELETE
-        # 服务消费者
-        - id: id-cloud-consumer-feign
-          uri: lb://cloud-consumer-feign
+        # 认证服务
+        - id: id-auth-service
+          uri: lb://auth-service
           predicates:
-            # - Path=/consumer-feign/**
+            - Path=/auth/**
+            - Method=GET,POST,PUT,DELETE
+        # 用户服务
+        - id: id-user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/user/**
             - Method=GET,POST,PUT,DELETE
 
 management:
